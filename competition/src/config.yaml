@@ -1,0 +1,21 @@
+data:
+  file_path: "data/input_data.json"
+
+model:
+  name: "bert-base-uncased"
+
+train: true
+
+output_dir: "output/"
+
+tasks:
+  - name: "concept_normalization"
+    input: "USB 3.0"
+  - name: "elaboration"
+    input: "USB 3.x"
+  - name: "extraction_summarization"
+    input: "This is a long product description that needs to be summarized."
+  - name: "relational_inference"
+    input: ["product", "category"]
+  - name: "sentiment_analysis"
+    input: "I love this product! It works great."
